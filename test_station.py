@@ -10,7 +10,7 @@ import unittest
 
 class TestStarship(unittest.TestCase):
     def setUp(self):
-        self.test_station_instance=Station("Enterprise")
+        self.test_station_instance=Station("Command")
         
     def test_score(self):
         self.assertTrue(self.test_station_instance.score==30)
@@ -22,16 +22,9 @@ class TestStarship(unittest.TestCase):
         self.assertEqual(self.test_station_instance.number_of_crew,len(self.test_station_instance.crew_list))
     def str_test(self):
         self.assertEqual(str(self.test_station_instance),"This is the  station")
-     def repr_test(self):
-        self.assertEqual(repr(self.test_station_instance),"This is the  station with the following 0 people:  and has score:30")
+    def repr_test(self):
+        self.assertEqual(repr(self.test_station_instance),"This is the Command station with the following 0 people:  and has score:30")
     
-    
-    
-    
-    
-    
-    
-    def ____(self):
-        return "This is the {} station".format(self.name)
+
 if __name__ == '__main__':
     unittest.main()          
