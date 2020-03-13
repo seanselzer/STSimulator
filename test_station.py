@@ -20,10 +20,12 @@ class TestStarship(unittest.TestCase):
     
     def test_number_of_crew(self):
         self.assertEqual(self.test_station_instance.number_of_crew,len(self.test_station_instance.crew_list))
-    def str_test(self):
-        self.assertEqual(str(self.test_station_instance),"This is the  station")
-    def repr_test(self):
-        self.assertEqual(repr(self.test_station_instance),"This is the Command station with the following 0 people:  and has score:30")
+    
+    def test__str__(self):
+        self.assertEqual(str(self.test_station_instance),"This is the Command station")
+    
+    def test__repr__(self):
+        self.assertEqual(repr(self.test_station_instance),"This is the Command station with the following 0 people: [] and has score:30")
     
 
 if __name__ == '__main__':
