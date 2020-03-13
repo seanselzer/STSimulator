@@ -10,9 +10,9 @@ class Station:
     
     def __init__(self, name):
         self.name = name
-        self.score = 30
-        self.crew_list = []
-        self.number_of_crew = len(self.crew_list)
+#        self.score = 30
+#        self.crew_list = []
+#        self.number_of_crew = len(self.crew_list)
         
 #    def __str__(self):
 #        return "This is the {} station".format(self.name)
